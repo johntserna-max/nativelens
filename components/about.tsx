@@ -24,8 +24,8 @@ export function About() {
         {/* Image */}
         <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-            alt="Photographer holding a camera"
+            src="/photographer.jpg"
+            alt="John Serna, Native Lens Photographer"
             fill
             className="object-cover"
           />
