@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ]
 
-const BOOKING_URL = "https://nativelensphotography.hbportal.co/schedule/69ea7e392526030041db76b9"
+
 
 export function Header() {
   return (
@@ -49,9 +49,9 @@ export function Header() {
         variant="outline"
         className="border-gold text-white bg-black/25 hover:bg-gold hover:text-black text-xs font-extrabold tracking-[0.18em] uppercase px-6 py-5 transition-transform hover:-translate-y-0.5"
       >
-        <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+        <Link href="/book">
           Book Now
-        </a>
+        </Link>
       </Button>
     </header>
   )
