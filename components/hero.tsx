@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-const BOOKING_URL = "https://nativelensphotography.hbportal.co/schedule/69ea7e392526030041db76b9"
+
 
 export function Hero() {
   return (
@@ -55,9 +55,9 @@ export function Hero() {
             variant="outline"
             className="border-gold text-white bg-black/25 hover:bg-gold hover:text-black text-xs font-extrabold tracking-[0.18em] uppercase px-6 py-5 transition-transform hover:-translate-y-0.5"
           >
-            <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+            <Link href="/book">
               Book Your Session
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
