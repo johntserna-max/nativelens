@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 
-const BOOKING_URL = "https://nativelensphotography.hbportal.co/schedule/69ea7e392526030041db76b9"
+const CONSULTATION_URL = "https://nativelensphotography.hbportal.co/schedule/69ea7ac059640b002a51841d"
 
 const features = [
   {
@@ -54,8 +54,8 @@ export function Booking() {
             asChild
             className="w-full bg-gradient-to-br from-gold to-gold-light text-[#111] font-extrabold text-xs tracking-[0.18em] uppercase px-6 py-5 hover:-translate-y-0.5 transition-transform"
           >
-            <a href={BOOKING_URL} target="_blank" rel="noreferrer">
-              Book Your Session Now
+            <a href={CONSULTATION_URL} target="_blank" rel="noreferrer">
+              Schedule a Consultation
             </a>
           </Button>
         </div>
@@ -81,8 +81,8 @@ export function Booking() {
             variant="outline"
             className="w-full border-gold text-white bg-black/25 hover:bg-gold hover:text-black text-xs font-extrabold tracking-[0.18em] uppercase px-6 py-5 transition-transform hover:-translate-y-0.5"
           >
-            <a href={BOOKING_URL} target="_blank" rel="noreferrer">
-              Book Now
+            <a href={CONSULTATION_URL} target="_blank" rel="noreferrer">
+              Schedule a Consultation
             </a>
           </Button>
         </div>

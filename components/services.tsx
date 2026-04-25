@@ -3,21 +3,25 @@ const services = [
     price: "Starting at $395",
     title: "Senior Experience Session",
     description: "Cinematic, personality-driven portraits for seniors preparing for their next chapter.",
+    bookingUrl: "https://nativelensphotography.hbportal.co/schedule/69ea7d98841f740028914e8a",
   },
   {
     price: "Starting at $495",
     title: "Elite Athlete Portrait Session",
     description: "Bold sports imagery with dramatic lighting, movement, and storytelling edge.",
+    bookingUrl: "https://nativelensphotography.hbportal.co/schedule/69ea7e392526030041db76b9",
   },
   {
     price: "Starting at $350",
     title: "Family Portrait Session",
     description: "Connection-focused portraits for families who want authentic, lasting images.",
+    bookingUrl: "https://nativelensphotography.hbportal.co/schedule/69ecd68ad92b4100320298b1",
   },
   {
     price: "Starting at $250",
     title: "Branding & Headshots",
     description: "Modern imagery for entrepreneurs, professionals, teams, and small businesses.",
+    bookingUrl: "https://nativelensphotography.hbportal.co/schedule/69ecd731458d0d0039e5fea2",
   },
 ]
 
@@ -41,7 +45,15 @@ export function Services() {
           >
             <p className="text-gold font-semibold text-sm mb-2">{service.price}</p>
             <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">{service.description}</p>
+            <a 
+              href={service.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-gold text-sm font-semibold hover:underline"
+            >
+              Book Now
+            </a>
           </article>
         ))}
       </div>
