@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
-
-const BOOKING_URL = "https://nativelensphotography.hbportal.co/schedule/69ea7e392526030041db76b9"
+import Link from "next/link"
 
 export function Contact() {
   return (
@@ -20,9 +19,9 @@ export function Contact() {
           asChild
           className="bg-gradient-to-br from-gold to-gold-light text-[#111] font-extrabold text-xs tracking-[0.18em] uppercase px-8 py-5 hover:-translate-y-0.5 transition-transform"
         >
-          <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+          <Link href="/book">
             Start Booking
-          </a>
+          </Link>
         </Button>
       </div>
     </section>
